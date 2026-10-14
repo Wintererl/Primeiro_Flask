@@ -1,0 +1,15 @@
+{% extends "homepage" %}
+# Copia toda o html extendido. Os blocos servem para pôr trechos que se deseja ser alterado como, nesse caso, o título e o body.
+# O head foi copiado e por isso não precisa estar aqui.
+
+
+{% block titulo %}
+Perfil do usuário {{ usuario }}
+{% endblock %}
+
+
+{% block body %}
+<h1>Perfil do usuário {{ usuario }}</h1>
+
+<a href="{{ url_for('homepage') }}">Sair</a>
+{% endblock %}
